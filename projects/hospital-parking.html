@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Hospital Parking System - Helmi Estiawan">
+  <meta name="description" content="Sistem manajemen parkir rumah sakit dengan fitur real-time monitoring dan pembayaran otomatis menggunakan CodeIgniter.">
+  <meta name="author" content="Helmi Estiawan">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <title>Hospital Parking System - Helmi Estiawan</title>
+</head>
+<body>
+  <div class="stars-container" aria-hidden="true"></div>
+  
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="logo">Helmi.</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="index.html" class="nav-link active">Projects</a></li>
+        <li><a href="../cv.html" class="nav-link">CV</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span>/</span><a href="index.html">Projects</a><span>/</span><span aria-current="page">Hospital Parking</span>
+      </nav>
+      <h1>Hospital Parking <span class="gradient-text">System</span></h1>
+    </div>
+  </header>
+  
+  <!-- Project Detail -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail-header reveal">
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            2022 - 2023
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            Full Stack Web Development
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            Internship Project
+          </div>
+        </div>
+        
+        <div class="project-detail-links">
+          <a href="https://github.com/101helmi" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-detail-image reveal">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop" alt="Hospital Parking System" width="1200" height="600" loading="lazy">
+      </div>
+      
+      <div class="project-detail-content">
+        <div class="reveal">
+          <h2>Overview</h2>
+          <p>
+            Sistem manajemen parkir terintegrasi untuk rumah sakit yang memungkinkan 
+            monitoring real-time ketersediaan slot parkir, pencatatan kendaraan masuk/keluar, 
+            dan perhitungan biaya parkir otomatis. Dikembangkan selama periode internship 
+            sebagai bagian dari tim development.
+          </p>
+        </div>
+        
+        <div class="reveal">
+          <h2>Problem</h2>
+          <p>
+            Rumah sakit menghadapi beberapa masalah dengan sistem parkir manual:
+          </p>
+          <ul>
+            <li>Tidak ada informasi real-time tentang ketersediaan slot parkir</li>
+            <li>Antrian panjang di pintu masuk dan keluar</li>
+            <li>Kesulitan dalam menghitung durasi dan biaya parkir</li>
+            <li>Tidak ada data untuk analisis penggunaan parkir</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Solution</h2>
+          <p>
+            Mengembangkan sistem parkir digital dengan fitur:
+          </p>
+          <ul>
+            <li>Dashboard real-time untuk monitoring slot parkir</li>
+            <li>Sistem barcode/QR untuk entry dan exit kendaraan</li>
+            <li>Perhitungan otomatis durasi dan biaya parkir</li>
+            <li>Laporan harian, mingguan, dan bulanan</li>
+            <li>Integrasi dengan printer struk</li>
+            <li>Kategori parkir berbeda untuk staff dan visitor</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Tech Stack</h2>
+          <div class="project-tech" style="margin: 1rem 0;">
+            <span class="tech-tag">CodeIgniter 3</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Bootstrap 4</span>
+            <span class="tech-tag">jQuery</span>
+            <span class="tech-tag">AJAX</span>
+            <span class="tech-tag">Chart.js</span>
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h2>My Role</h2>
+          <p>
+            Sebagai intern developer, kontribusi saya meliputi:
+          </p>
+          <ul>
+            <li>Mengembangkan modul laporan dan statistik</li>
+            <li>Implementasi fitur real-time update menggunakan AJAX</li>
+            <li>Membuat interface dashboard dengan Chart.js</li>
+            <li>Bug fixing dan optimization</li>
+            <li>Dokumentasi teknis</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Screenshots</h2>
+          <div class="project-gallery">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Dashboard" width="600" height="400" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Entry System" width="600" height="400" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop" alt="Reports" width="600" height="400" loading="lazy">
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h2>Challenges & Learnings</h2>
+          <ul>
+            <li>Pertama kali bekerja dengan real-time data updates</li>
+            <li>Belajar tentang MVC architecture dengan CodeIgniter</li>
+            <li>Pengalaman bekerja dalam tim development</li>
+            <li>Memahami workflow development profesional</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Project Navigation -->
+      <nav class="project-navigation reveal" aria-label="Project navigation">
+        <a href="tomato-classification.html" class="project-nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Previous Project
+        </a>
+        <a href="inventory-system.html" class="project-nav-link">
+          Next Project
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </nav>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Helmi.</a>
+          <p>Backend Developer yang passionate dalam membangun solusi digital.</p>
+        </div>
+        <nav class="footer-nav"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="index.html">Projects</a></li><li><a href="../cv.html">CV</a></li></ul></nav>
+        <nav class="footer-nav"><h4>Contact</h4><ul><li><a href="mailto:helmi@example.com">helmi@example.com</a></li><li><a href="../contact.html">Contact Form</a></li></ul></nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Helmi Estiawan. All rights reserved.</p>
+        <p>Made with ❤️ in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>

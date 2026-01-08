@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Tomato Maturity Classification - Helmi Estiawan">
+  <meta name="description" content="Project klasifikasi tingkat kematangan tomat menggunakan Deep Learning dan Object Detection dengan Python dan TensorFlow.">
+  <meta name="author" content="Helmi Estiawan">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <title>Tomato Maturity Classification - Helmi Estiawan</title>
+</head>
+<body>
+  <div class="stars-container" aria-hidden="true"></div>
+  
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="logo">Helmi.</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="index.html" class="nav-link active">Projects</a></li>
+        <li><a href="../cv.html" class="nav-link">CV</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span>/</span><a href="index.html">Projects</a><span>/</span><span aria-current="page">Tomato Classification</span>
+      </nav>
+      <h1>Tomato Maturity <span class="gradient-text">Classification</span></h1>
+    </div>
+  </header>
+  
+  <!-- Project Detail -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail-header reveal">
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            2024
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            Machine Learning / Deep Learning
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Skripsi / Research
+          </div>
+        </div>
+        
+        <div class="project-detail-links">
+          <a href="https://github.com/101helmi" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-detail-image reveal">
+        <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=1200&h=600&fit=crop" alt="Tomato Classification" width="1200" height="600" loading="lazy">
+      </div>
+      
+      <div class="project-detail-content">
+        <div class="reveal">
+          <h2>Overview</h2>
+          <p>
+            Project ini merupakan penelitian skripsi yang mengembangkan sistem klasifikasi 
+            tingkat kematangan tomat menggunakan metode Deep Learning dan Object Detection. 
+            Sistem dapat mendeteksi dan mengklasifikasikan tomat ke dalam beberapa kategori 
+            kematangan secara real-time.
+          </p>
+        </div>
+        
+        <div class="reveal">
+          <h2>Background</h2>
+          <p>
+            Dalam industri pertanian, penentuan tingkat kematangan buah secara manual 
+            membutuhkan waktu dan tenaga yang besar. Kesalahan dalam menentukan kematangan 
+            dapat menyebabkan kerugian ekonomi. Sistem otomatis berbasis AI dapat membantu 
+            petani dan distributor untuk sorting buah dengan lebih efisien dan akurat.
+          </p>
+        </div>
+        
+        <div class="reveal">
+          <h2>Methodology</h2>
+          <ul>
+            <li>Pengumpulan dataset gambar tomat dengan berbagai tingkat kematangan</li>
+            <li>Data augmentation untuk meningkatkan variasi dataset</li>
+            <li>Training model menggunakan YOLO untuk object detection</li>
+            <li>Fine-tuning dengan transfer learning dari pre-trained model</li>
+            <li>Deployment ke aplikasi Android untuk penggunaan praktis</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Tech Stack</h2>
+          <div class="project-tech" style="margin: 1rem 0;">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">YOLO</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Android</span>
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h2>Results</h2>
+          <p>
+            Model yang dikembangkan mencapai akurasi tinggi dalam mengklasifikasikan 
+            tingkat kematangan tomat:
+          </p>
+          <ul>
+            <li>Akurasi overall: ~92%</li>
+            <li>Dapat mendeteksi multiple tomat dalam satu frame</li>
+            <li>Real-time inference pada perangkat Android</li>
+            <li>Mampu membedakan 4 tingkat kematangan: Mentah, Setengah Matang, Matang, Terlalu Matang</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Screenshots</h2>
+          <div class="project-gallery">
+            <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=600&h=400&fit=crop" alt="Detection Result" width="600" height="400" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=600&h=400&fit=crop" alt="Training Process" width="600" height="400" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Mobile App" width="600" height="400" loading="lazy">
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h2>Challenges & Learnings</h2>
+          <ul>
+            <li>Handling variasi pencahayaan dalam gambar</li>
+            <li>Optimasi model untuk device mobile dengan resource terbatas</li>
+            <li>Balancing antara accuracy dan inference speed</li>
+            <li>Pengumpulan dan labeling dataset yang berkualitas</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Project Navigation -->
+      <nav class="project-navigation reveal" aria-label="Project navigation">
+        <a href="inventory-system.html" class="project-nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Previous Project
+        </a>
+        <a href="hospital-parking.html" class="project-nav-link">
+          Next Project
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </nav>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Helmi.</a>
+          <p>Backend Developer yang passionate dalam membangun solusi digital.</p>
+        </div>
+        <nav class="footer-nav"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="index.html">Projects</a></li><li><a href="../cv.html">CV</a></li></ul></nav>
+        <nav class="footer-nav"><h4>Contact</h4><ul><li><a href="mailto:helmi@example.com">helmi@example.com</a></li><li><a href="../contact.html">Contact Form</a></li></ul></nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Helmi Estiawan. All rights reserved.</p>
+        <p>Made with ❤️ in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>

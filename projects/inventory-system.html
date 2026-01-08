@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Inventory System - Helmi Estiawan">
+  <meta name="description" content="Detail project Inventory System at Jaya Perkasa - Sistem manajemen inventaris dengan fitur tracking stok dan laporan.">
+  <meta name="author" content="Helmi Estiawan">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <title>Inventory System - Helmi Estiawan</title>
+</head>
+<body>
+  <div class="stars-container" aria-hidden="true"></div>
+  
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="logo">Helmi.</a>
+      
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="index.html" class="nav-link active">Projects</a></li>
+        <li><a href="../cv.html" class="nav-link">CV</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="index.html">Projects</a>
+        <span>/</span>
+        <span aria-current="page">Inventory System</span>
+      </nav>
+      <h1>Inventory System at <span class="gradient-text">Jaya Perkasa</span></h1>
+    </div>
+  </header>
+  
+  <!-- Project Detail -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-detail-header reveal">
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            2023 - 2024
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            Client: Jaya Perkasa
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Full Stack Development
+          </div>
+        </div>
+        
+        <div class="project-detail-links">
+          <a href="https://github.com/101helmi" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            View on GitHub
+          </a>
+          <a href="#" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-detail-image reveal">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop" 
+             alt="Inventory System Screenshot" 
+             width="1200" 
+             height="600"
+             loading="lazy">
+      </div>
+      
+      <div class="project-detail-content">
+        <div class="reveal">
+          <h2>Overview</h2>
+          <p>
+            Inventory System adalah aplikasi web yang dikembangkan untuk Jaya Perkasa, sebuah 
+            perusahaan distributor. Sistem ini dirancang untuk mengelola stok barang, tracking 
+            penjualan, dan menghasilkan laporan bisnis secara otomatis.
+          </p>
+          <p>
+            Project ini merupakan solusi end-to-end yang mencakup frontend user interface, 
+            backend API, dan database management. Dikembangkan dari nol berdasarkan kebutuhan 
+            spesifik klien.
+          </p>
+        </div>
+        
+        <div class="reveal">
+          <h2>Problem</h2>
+          <p>
+            Sebelumnya, Jaya Perkasa menggunakan spreadsheet manual untuk mencatat inventory 
+            yang menyebabkan beberapa masalah:
+          </p>
+          <ul>
+            <li>Data tidak real-time dan sering terjadi kesalahan input</li>
+            <li>Sulit melacak pergerakan stok barang</li>
+            <li>Proses pembuatan laporan memakan waktu lama</li>
+            <li>Tidak ada sistem alert untuk stok minimum</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Solution</h2>
+          <p>
+            Saya mengembangkan sistem inventory terintegrasi dengan fitur-fitur berikut:
+          </p>
+          <ul>
+            <li>Dashboard real-time untuk monitoring stok dan penjualan</li>
+            <li>Manajemen produk dengan kategori dan SKU</li>
+            <li>Tracking barang masuk dan keluar dengan history lengkap</li>
+            <li>Sistem alert otomatis untuk stok minimum</li>
+            <li>Laporan penjualan harian, mingguan, dan bulanan</li>
+            <li>Export data ke Excel dan PDF</li>
+            <li>Multi-user dengan role management</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Tech Stack</h2>
+          <div class="project-tech" style="margin: 1rem 0;">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">jQuery</span>
+            <span class="tech-tag">Chart.js</span>
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h2>Screenshots</h2>
+          <div class="project-gallery">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+                 alt="Dashboard" 
+                 width="600" 
+                 height="400"
+                 loading="lazy">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" 
+                 alt="Product List" 
+                 width="600" 
+                 height="400"
+                 loading="lazy">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop" 
+                 alt="Reports" 
+                 width="600" 
+                 height="400"
+                 loading="lazy">
+          </div>
+        </div>
+        
+        <div class="reveal">
+          <h2>Challenges & Learnings</h2>
+          <p>
+            Tantangan utama dalam project ini adalah memahami workflow bisnis klien dan 
+            menerjemahkannya ke dalam sistem digital yang efisien. Saya belajar banyak tentang:
+          </p>
+          <ul>
+            <li>Komunikasi dengan klien untuk memahami kebutuhan bisnis</li>
+            <li>Database design untuk inventory management</li>
+            <li>Optimasi query untuk data dalam jumlah besar</li>
+            <li>User experience design untuk aplikasi bisnis</li>
+          </ul>
+        </div>
+        
+        <div class="reveal">
+          <h2>Results</h2>
+          <p>
+            Setelah implementasi sistem, Jaya Perkasa mengalami peningkatan signifikan:
+          </p>
+          <ul>
+            <li>Waktu pembuatan laporan berkurang 80%</li>
+            <li>Kesalahan pencatatan stok berkurang drastis</li>
+            <li>Visibilitas real-time terhadap kondisi inventory</li>
+            <li>Pengambilan keputusan bisnis lebih cepat dan akurat</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Project Navigation -->
+      <nav class="project-navigation reveal" aria-label="Project navigation">
+        <a href="hospital-parking.html" class="project-nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Previous Project
+        </a>
+        <a href="tomato-classification.html" class="project-nav-link">
+          Next Project
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Helmi.</a>
+          <p>Backend Developer yang passionate dalam membangun solusi digital yang efisien dan scalable.</p>
+          <div class="footer-social">
+            <a href="https://github.com/101helmi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/helmiestiawan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="mailto:helmi@example.com" class="social-link" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="../cv.html">CV</a></li>
+          </ul>
+        </nav>
+        
+        <nav class="footer-nav" aria-label="Footer contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:helmi@example.com">helmi@example.com</a></li>
+            <li><a href="../contact.html">Contact Form</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Helmi Estiawan. All rights reserved.</p>
+        <p>Made with ❤️ in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>
