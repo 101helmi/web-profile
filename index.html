@@ -1,48 +1,29 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="light">
+<html lang="id" data-theme="light" data-lang="id">
 <head>
-  <!-- Primary Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Helmi Estiawan - Backend Developer & Programmer">
-  <meta name="description" content="Portfolio website Helmi Estiawan. Backend Developer yang berfokus pada Python, Web Development, dan Machine Learning. Lihat project dan pengalaman saya.">
-  <meta name="keywords" content="Helmi Estiawan, Backend Developer, Python, Web Developer, Portfolio, Programmer Indonesia">
+  <meta name="title" content="Helmi Estiawan - Programmer">
+  <meta name="description" content="Portfolio website Helmi Estiawan. Backend Developer yang berfokus pada Python, Web Development, dan Machine Learning.">
+  <meta name="keywords" content="Helmi Estiawan, Fullstack Developer, Web Developer, Programmer, Portfolio">
   <meta name="author" content="Helmi Estiawan">
   <meta name="robots" content="index, follow">
   
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://101helmi.github.io/personal-website/">
-  <meta property="og:title" content="Helmi Estiawan - Backend Developer & Programmer">
-  <meta property="og:description" content="Portfolio website Helmi Estiawan. Backend Developer yang berfokus pada Python, Web Development, dan Machine Learning.">
-  <meta property="og:image" content="assets/images/profile/og-image.jpg">
+  <meta property="og:title" content="Helmi Estiawan - Programmer">
+  <meta property="og:description" content="Portfolio website Helmi Estiawan.">
   
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://101helmi.github.io/personal-website/">
-  <meta property="twitter:title" content="Helmi Estiawan - Backend Developer & Programmer">
-  <meta property="twitter:description" content="Portfolio website Helmi Estiawan. Backend Developer yang berfokus pada Python, Web Development, dan Machine Learning.">
-  <meta property="twitter:image" content="assets/images/profile/og-image.jpg">
-  
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-  
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Canonical URL -->
   <link rel="canonical" href="https://101helmi.github.io/personal-website/">
   
-  <title>Helmi Estiawan - Backend Developer & Programmer</title>
+  <title>Helmi Estiawan - Programmer</title>
 </head>
 <body>
-  <!-- Stars Background (for dark mode) -->
   <div class="stars-container" aria-hidden="true"></div>
   
   <!-- Navigation -->
@@ -52,35 +33,23 @@
       
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="projects/index.html" class="nav-link">Projects</a></li>
-        <li><a href="cv.html" class="nav-link">CV</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link"><span data-id>Tentang</span><span data-en>About</span></a></li>
+        <li><a href="projects/index.html" class="nav-link"><span data-id>Proyek</span><span data-en>Projects</span></a></li>
+        <li><a href="contact.html" class="nav-link"><span data-id>Kontak</span><span data-en>Contact</span></a></li>
       </ul>
       
-      <div style="display: flex; align-items: center; gap: 1rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+        
         <button class="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         </button>
         
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
@@ -89,60 +58,36 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="hero-content">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-title">
-          <span class="gradient-text">Helmi Estiawan</span>
-        </h1>
+        <p class="hero-greeting"><span data-id>Hi, Saya</span><span data-en>Hi, I'm</span></p>
+        <h1 class="hero-title"><span class="gradient-text">Helmi Estiawan</span></h1>
         <p class="hero-subtitle">Programmer | Fullstack Developer</p>
         <p class="hero-description">
-          Seorang developer yang passionate dalam membangun solusi digital. 
-          Berfokus pada Python, Web Development, dan Machine Learning.
+          <span data-id>Seorang developer yang passionate dalam membangun solusi digital. Berfokus pada Python, Web Development, dan Machine Learning.</span>
+          <span data-en>A passionate developer building digital solutions. Focused on Python, Web Development, and Machine Learning.</span>
         </p>
         
         <div class="hero-cta">
           <a href="projects/index.html" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-            </svg>
-            Lihat Project
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <span data-id>Lihat Proyek</span><span data-en>View Projects</span>
           </a>
           <a href="assets/documents/cv-helmi-estiawan.pdf" class="btn btn-secondary" download>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Download CV
           </a>
         </div>
         
         <div class="hero-social">
-          <a href="https://github.com/101helmi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
-          </a>
-          <a href="https://linkedin.com/in/helmiestiawan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
-          <a href="mailto:helmi@example.com" class="social-link" aria-label="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </a>
+          <a href="https://github.com/101helmi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="https://linkedin.com/in/helmiestiawan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="mailto:helmi@example.com" class="social-link" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
         </div>
       </div>
       
       <div class="hero-image">
         <div class="profile-wrapper">
           <img src="assets/images/20240211_195455_2.png" 
-               alt="Helmi Estiawan - Backend Developer" 
+               alt="Helmi Estiawan - Programmer" 
                class="profile-image"
                width="350" 
                height="350"
@@ -152,295 +97,124 @@
     </div>
   </section>
   
-  <!-- About Preview Section -->
+  <!-- About Preview -->
   <section class="about-preview" id="about-preview">
     <div class="container">
-      <div class="about-image reveal">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-             alt="Workspace" 
-             width="600" 
-             height="400"
-             loading="lazy">
-      </div>
-      
-      <div class="about-content reveal">
-        <p class="section-subtitle">Tentang Saya</p>
-        <h2>Passionate Developer dengan Fokus pada <span class="gradient-text">Solusi Digital</span></h2>
-        <p>
-          Saya adalah seorang Backend Developer dengan pengalaman dalam membangun aplikasi web dan 
-          sistem yang efisien. Memiliki ketertarikan khusus pada Python, Machine Learning, dan 
-          pengembangan solusi berbasis data.
-        </p>
-        <p>
-          Dengan latar belakang di bidang teknologi informasi, saya terus belajar dan mengembangkan 
-          skill untuk mengikuti perkembangan teknologi terbaru.
-        </p>
-        <a href="about.html" class="btn btn-secondary">
-          Selengkapnya
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
+      <div class="about-content reveal" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto; text-align: center;">
+        <p class="section-subtitle"><span data-id>Tentang Saya</span><span data-en>About Me</span></p>
+        <h2><span class="gradient-text"><span data-id>Perkenalan Diri</span><span data-en>Introduce Myself</span></span></span></h2>
+        <p data-id>Saya adalah seorang Backend Developer dengan pengalaman dalam membangun aplikasi web dan sistem yang efisien. Memiliki ketertarikan khusus pada Python, Machine Learning, dan pengembangan solusi berbasis data.</p>
+        <p data-en>I am a Backend Developer with experience in building efficient web applications and systems. I have a special interest in Python, Machine Learning, and data-driven solution development.</p>
+        <p data-id>Dengan latar belakang di bidang teknologi informasi, saya terus belajar dan mengembangkan skill untuk mengikuti perkembangan teknologi terbaru.</p>
+        <p data-en>With a background in information technology, I continue to learn and develop skills to keep up with the latest technology trends.</p>
+        <a href="about.html" class="btn btn-secondary"><span data-id>Selengkapnya</span><span data-en>Learn More</span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
       </div>
     </div>
   </section>
   
-  <!-- Featured Projects Section -->
+  <!-- Featured Projects -->
   <section class="featured-projects" id="projects">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-subtitle">Portfolio</p>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <p class="section-description">
-          Beberapa project terbaik yang telah saya kerjakan
-        </p>
+        <h2 class="section-title"><span data-id>Proyek </span><span data-en>Featured </span><span class="gradient-text"><span data-id>Unggulan</span><span data-en>Projects</span></span></h2>
+        <p class="section-description"><span data-id>Beberapa proyek terbaik yang telah saya kerjakan</span><span data-en>Some of the best projects I have worked on</span></p>
       </div>
       
       <div class="projects-grid">
-        <!-- Project 1 -->
         <article class="project-card reveal" data-category="web,fullstack">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" 
-                 alt="Inventory System" 
-                 width="600" 
-                 height="400"
-                 loading="lazy">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="projects/inventory-system.html">Detail</a>
-                <a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </div>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Inventory System" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="projects/inventory-system.html">Detail</a><a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a></div></div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Inventory System</h3>
-            <p class="project-description">
-              Sistem manajemen inventaris untuk Jaya Perkasa dengan fitur tracking stok dan laporan.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Bootstrap</span>
-              <span class="tech-tag">MySQL</span>
-            </div>
+            <p class="project-description"><span data-id>Sistem manajemen inventaris untuk Jaya Perkasa dengan fitur tracking stok dan laporan.</span><span data-en>Inventory management system for Jaya Perkasa with stock tracking and reporting features.</span></p>
+            <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">MySQL</span></div>
           </div>
         </article>
         
-        <!-- Project 2 -->
         <article class="project-card reveal" data-category="ml,python">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=600&h=400&fit=crop" 
-                 alt="Tomato Classification" 
-                 width="600" 
-                 height="400"
-                 loading="lazy">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="projects/tomato-classification.html">Detail</a>
-                <a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </div>
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=600&h=400&fit=crop" alt="Tomato Classification" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="projects/tomato-classification.html">Detail</a><a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a></div></div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Tomato Maturity Classification</h3>
-            <p class="project-description">
-              Klasifikasi tingkat kematangan tomat menggunakan Deep Learning dan Object Detection.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">Android</span>
-            </div>
+            <p class="project-description"><span data-id>Klasifikasi tingkat kematangan tomat menggunakan Deep Learning dan Object Detection.</span><span data-en>Tomato maturity classification using Deep Learning and Object Detection.</span></p>
+            <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Android</span></div>
           </div>
         </article>
         
-        <!-- Project 3 -->
         <article class="project-card reveal" data-category="web,fullstack">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" 
-                 alt="Hospital Parking System" 
-                 width="600" 
-                 height="400"
-                 loading="lazy">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="projects/hospital-parking.html">Detail</a>
-                <a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a>
-              </div>
-            </div>
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Hospital Parking System" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="projects/hospital-parking.html">Detail</a><a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a></div></div>
           </div>
           <div class="project-content">
             <h3 class="project-title">Hospital Parking System</h3>
-            <p class="project-description">
-              Sistem manajemen parkir rumah sakit dengan fitur real-time monitoring.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">CodeIgniter</span>
-              <span class="tech-tag">Bootstrap</span>
-              <span class="tech-tag">jQuery</span>
-              <span class="tech-tag">MySQL</span>
-            </div>
+            <p class="project-description"><span data-id>Sistem manajemen parkir rumah sakit dengan fitur real-time monitoring.</span><span data-en>Hospital parking management system with real-time monitoring features.</span></p>
+            <div class="project-tech"><span class="tech-tag">CodeIgniter</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">jQuery</span><span class="tech-tag">MySQL</span></div>
           </div>
         </article>
       </div>
       
       <div class="view-all-projects reveal">
-        <a href="projects/index.html" class="btn btn-secondary">
-          Lihat Semua Project
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
+        <a href="projects/index.html" class="btn btn-secondary"><span data-id>Lihat Semua Proyek</span><span data-en>View All Projects</span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
       </div>
     </div>
   </section>
   
-  <!-- Tech Stack Section -->
+  <!-- Tech Stack -->
   <section class="tech-stack" id="skills">
     <div class="container">
       <div class="section-header reveal">
         <p class="section-subtitle">Skills</p>
         <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
-        <p class="section-description">
-          Teknologi dan tools yang saya gunakan dalam pengembangan
-        </p>
+        <p class="section-description"><span data-id>Teknologi dan tools yang saya gunakan dalam pengembangan</span><span data-en>Technologies and tools I use in development</span></p>
       </div>
       
       <div class="tech-categories">
         <div class="tech-category reveal">
-          <h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-            Languages
-          </h3>
-          <div class="tech-list">
-            <span class="tech-item">Python</span>
-            <span class="tech-item">JavaScript</span>
-            <span class="tech-item">PHP</span>
-            <span class="tech-item">HTML</span>
-            <span class="tech-item">CSS</span>
-            <span class="tech-item">SQL</span>
-          </div>
+          <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg> Languages</h3>
+          <div class="tech-list"><span class="tech-item">Python</span><span class="tech-item">JavaScript</span><span class="tech-item">PHP</span><span class="tech-item">HTML</span><span class="tech-item">CSS</span><span class="tech-item">SQL</span></div>
         </div>
-        
         <div class="tech-category reveal">
-          <h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="3" y1="9" x2="21" y2="9"></line>
-              <line x1="9" y1="21" x2="9" y2="9"></line>
-            </svg>
-            Frameworks
-          </h3>
-          <div class="tech-list">
-            <span class="tech-item">CodeIgniter</span>
-            <span class="tech-item">Bootstrap</span>
-            <span class="tech-item">jQuery</span>
-            <span class="tech-item">TensorFlow</span>
-          </div>
+          <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> Frameworks</h3>
+          <div class="tech-list"><span class="tech-item">CodeIgniter</span><span class="tech-item">Bootstrap</span><span class="tech-item">jQuery</span><span class="tech-item">TensorFlow</span></div>
         </div>
-        
         <div class="tech-category reveal">
-          <h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-            </svg>
-            Database & Tools
-          </h3>
-          <div class="tech-list">
-            <span class="tech-item">MySQL</span>
-            <span class="tech-item">Git</span>
-            <span class="tech-item">VS Code</span>
-            <span class="tech-item">Android Studio</span>
-          </div>
+          <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg> Database & Tools</h3>
+          <div class="tech-list"><span class="tech-item">MySQL</span><span class="tech-item">Git</span><span class="tech-item">VS Code</span><span class="tech-item">Android Studio</span></div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Contact CTA Section -->
+  <!-- Contact CTA -->
   <section class="contact-cta">
     <div class="container">
-      <h2 class="reveal">Mari Bekerja Sama</h2>
-      <p class="reveal">
-        Tertarik untuk berkolaborasi atau punya project yang ingin didiskusikan? 
-        Jangan ragu untuk menghubungi saya.
-      </p>
-      <a href="contact.html" class="btn btn-secondary reveal">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-        Hubungi Saya
-      </a>
+      <h2 class="reveal"><span data-id>Mari Bekerja Sama</span><span data-en>Let's Work Together</span></h2>
+      <p class="reveal"><span data-id>Tertarik untuk berkolaborasi atau punya proyek yang ingin didiskusikan? Jangan ragu untuk menghubungi saya.</span><span data-en>Interested in collaborating or have a project to discuss? Don't hesitate to contact me.</span></p>
+      <a href="contact.html" class="btn btn-secondary reveal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> <span data-id>Hubungi Saya</span><span data-en>Contact Me</span></a>
     </div>
   </section>
   
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">Helmi.</a>
-          <p>Backend Developer yang passionate dalam membangun solusi digital yang efisien dan scalable.</p>
-          <div class="footer-social">
-            <a href="https://github.com/101helmi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-            <a href="https://linkedin.com/in/helmiestiawan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="mailto:helmi@example.com" class="social-link" aria-label="Email">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-          </div>
+      <div class="footer-simple">
+        <a href="index.html" class="logo">Helmi.</a>
+        <div class="footer-social">
+          <a href="https://github.com/101helmi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="https://linkedin.com/in/helmiestiawan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="mailto:helmi@example.com" class="social-link" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
         </div>
-        
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects/index.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-          </ul>
-        </nav>
-        
-        <nav class="footer-nav" aria-label="Footer contact">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:helmi@example.com">helmi@example.com</a></li>
-            <li><a href="contact.html">Contact Form</a></li>
-            <li><a href="https://github.com/101helmi" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/helmiestiawan" target="_blank" rel="noopener">LinkedIn</a></li>
-          </ul>
-        </nav>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 Helmi Estiawan. All rights reserved.</p>
-        <p>Made with ❤️ in Indonesia</p>
+        <p class="footer-copyright">&copy; 2025 Helmi Estiawan</p>
       </div>
     </div>
   </footer>
   
-  <!-- Scripts -->
   <script src="js/main.js"></script>
 </body>
 </html>

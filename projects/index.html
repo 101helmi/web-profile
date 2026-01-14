@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light" data-lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Projects - Helmi Estiawan">
+  <meta name="description" content="Daftar project dan portfolio Helmi Estiawan.">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Projects - Helmi Estiawan</title>
+</head>
+<body>
+  <div class="stars-container" aria-hidden="true"></div>
+  
+  <nav class="navbar" role="navigation">
+    <div class="container">
+      <a href="../index.html" class="logo">Helmi.</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link"><span data-id>Tentang</span><span data-en>About</span></a></li>
+        <li><a href="index.html" class="nav-link active"><span data-id>Proyek</span><span data-en>Projects</span></a></li>
+        <li><a href="../contact.html" class="nav-link"><span data-id>Kontak</span><span data-en>Contact</span></a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div class="lang-switcher"><button class="lang-btn active" data-lang="id">ID</button><button class="lang-btn" data-lang="en">EN</button></div>
+        <button class="theme-toggle" aria-label="Toggle dark mode"><svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span><span data-id>Proyek</span><span data-en>Projects</span></nav>
+      <h1><span data-id>Proyek </span><span data-en>My </span><span class="gradient-text"><span data-id>Saya</span><span data-en>Projects</span></span></h1>
+      <p><span data-id>Kumpulan proyek yang telah saya kerjakan</span><span data-en>Collection of projects I have worked on</span></p>
+    </div>
+  </header>
+  
+  <section class="projects-page">
+    <div class="container">
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all"><span data-id>Semua</span><span data-en>All</span></button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="web,fullstack">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Inventory System" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="inventory-system.html">Detail</a><a href="https://github.com/101helmi" target="_blank">GitHub</a></div></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Inventory System at Jaya Perkasa</h3>
+            <p class="project-description"><span data-id>Sistem manajemen inventaris dengan fitur tracking stok dan laporan.</span><span data-en>Inventory management system with stock tracking and reporting features.</span></p>
+            <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">MySQL</span></div>
+          </div>
+        </article>
+        
+        <article class="project-card reveal" data-category="ml,python">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=600&h=400&fit=crop" alt="Tomato Classification" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="tomato-classification.html">Detail</a><a href="https://github.com/101helmi" target="_blank">GitHub</a></div></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Tomato Maturity Classification</h3>
+            <p class="project-description"><span data-id>Klasifikasi tingkat kematangan tomat menggunakan Deep Learning.</span><span data-en>Tomato maturity classification using Deep Learning.</span></p>
+            <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Android</span><span class="tech-tag">YOLO</span></div>
+          </div>
+        </article>
+        
+        <article class="project-card reveal" data-category="web,fullstack">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Hospital Parking" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="hospital-parking.html">Detail</a><a href="https://github.com/101helmi" target="_blank">GitHub</a></div></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Hospital Parking System</h3>
+            <p class="project-description"><span data-id>Sistem manajemen parkir rumah sakit dengan real-time monitoring.</span><span data-en>Hospital parking management system with real-time monitoring.</span></p>
+            <div class="project-tech"><span class="tech-tag">CodeIgniter</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">jQuery</span><span class="tech-tag">MySQL</span></div>
+          </div>
+        </article>
+        
+        <article class="project-card reveal" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Dashboard Analytics" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="#">Detail</a><a href="https://github.com/101helmi" target="_blank">GitHub</a></div></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Dashboard Analytics</h3>
+            <p class="project-description"><span data-id>Dashboard untuk monitoring data bisnis dengan visualisasi chart.</span><span data-en>Dashboard for business data monitoring with chart visualization.</span></p>
+            <div class="project-tech"><span class="tech-tag">PHP</span><span class="tech-tag">Chart.js</span><span class="tech-tag">MySQL</span></div>
+          </div>
+        </article>
+        
+        <article class="project-card reveal" data-category="python">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop" alt="Web Scraper" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="#">Detail</a><a href="https://github.com/101helmi" target="_blank">GitHub</a></div></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Web Scraper Tool</h3>
+            <p class="project-description"><span data-id>Tool untuk scraping data dengan scheduling dan export ke Excel.</span><span data-en>Tool for data scraping with scheduling and Excel export.</span></p>
+            <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">BeautifulSoup</span><span class="tech-tag">Selenium</span></div>
+          </div>
+        </article>
+        
+        <article class="project-card reveal" data-category="web,fullstack">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop" alt="E-commerce" width="600" height="400" loading="lazy">
+            <div class="project-overlay"><div class="project-links"><a href="#">Detail</a><a href="https://github.com/101helmi" target="_blank">GitHub</a></div></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Mini E-commerce</h3>
+            <p class="project-description"><span data-id>Platform e-commerce sederhana dengan fitur cart dan checkout.</span><span data-en>Simple e-commerce platform with cart and checkout features.</span></p>
+            <div class="project-tech"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">Bootstrap</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact-cta">
+    <div class="container">
+      <h2 class="reveal"><span data-id>Punya Proyek yang Ingin Dikerjakan?</span><span data-en>Have a Project in Mind?</span></h2>
+      <p class="reveal"><span data-id>Mari diskusikan bagaimana saya bisa membantu mewujudkan ide Anda.</span><span data-en>Let's discuss how I can help bring your ideas to life.</span></p>
+      <a href="../contact.html" class="btn btn-secondary reveal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> <span data-id>Hubungi Saya</span><span data-en>Contact Me</span></a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-simple">
+        <a href="index.html" class="logo">Helmi.</a>
+        <div class="footer-social">
+          <a href="https://github.com/101helmi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="https://linkedin.com/in/helmiestiawan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="mailto:helmi@example.com" class="social-link" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 Helmi Estiawan</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>

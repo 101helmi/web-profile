@@ -5,11 +5,60 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize all modules
   ThemeManager.init();
+  LanguageManager.init();
   StarsBackground.init();
   MobileMenu.init();
   ScrollReveal.init();
   SmoothScroll.init();
 });
+
+/* ---------- Language Manager (ID/EN) ---------- */
+const LanguageManager = {
+  init() {
+    this.buttons = document.querySelectorAll('.lang-btn');
+    this.html = document.documentElement;
+    
+    // Check saved preference
+    const savedLang = localStorage.getItem('language') || 'id';
+    this.setLanguage(savedLang);
+    
+    // Button events
+    this.buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        this.setLanguage(lang);
+      });
+    });
+  },
+  
+  setLanguage(lang) {
+    this.html.setAttribute('data-lang', lang);
+    localStorage.setItem('language', lang);
+    
+    // Update active button
+    this.buttons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    
+    // Update page title based on language
+    this.updatePageMeta(lang);
+  },
+  
+  updatePageMeta(lang) {
+    // Optional: Update document title based on current page
+    const titles = {
+      'index.html': { id: 'Helmi Estiawan - Backend Developer & Programmer', en: 'Helmi Estiawan - Backend Developer & Programmer' },
+      'about.html': { id: 'Tentang - Helmi Estiawan', en: 'About - Helmi Estiawan' },
+      'cv.html': { id: 'CV - Helmi Estiawan', en: 'CV - Helmi Estiawan' },
+      'contact.html': { id: 'Kontak - Helmi Estiawan', en: 'Contact - Helmi Estiawan' }
+    };
+    
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    if (titles[currentPage]) {
+      document.title = titles[currentPage][lang];
+    }
+  }
+};
 
 /* ---------- Theme Manager (Dark/Light Mode) ---------- */
 const ThemeManager = {
