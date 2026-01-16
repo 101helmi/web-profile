@@ -368,7 +368,7 @@ const ContactForm = {
     this.form.addEventListener('submit', (e) => this.handleSubmit(e));
   },
   
-  handleSubmit(e) {
+  async handleSubmit(e) {
     e.preventDefault();
     
     const formData = new FormData(this.form);
@@ -384,11 +384,48 @@ const ContactForm = {
       this.showMessage('Please enter a valid email', 'error');
       return;
     }
+
+    // Get form action (Formspree endpoint)
+    const action = this.form.getAttribute('action');
     
-    // Here you would normally send the data to a server
-    // For now, we'll just show a success message
-    this.showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
-    this.form.reset();
+    // If no action or placeholder, show message
+    if (!action || action === '#') {
+      this.showMessage('Form endpoint not configured', 'error');
+      return;
+    }
+    
+    // Show loading state
+    const submitBtn = this.form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span>Sending...</span>';
+    submitBtn.disabled = true;
+    
+    try {
+      const response = await fetch(action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        this.showMessage('Message sent successfully! I\'ll get back to you soon.', 'success');
+        this.form.reset();
+      } else {
+        const result = await response.json();
+        if (result.errors) {
+          this.showMessage(result.errors.map(e => e.message).join(', '), 'error');
+        } else {
+          this.showMessage('Failed to send message. Please try again.', 'error');
+        }
+      }
+    } catch (error) {
+      this.showMessage('Network error. Please check your connection.', 'error');
+    } finally {
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+    }
   },
   
   isValidEmail(email) {
