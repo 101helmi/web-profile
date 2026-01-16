@@ -597,7 +597,7 @@ section {
 
 /* ---------- About Preview Section ---------- */
 .about-preview {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .about-preview .container {
@@ -641,6 +641,68 @@ section {
   margin-top: 1rem;
 }
 
+/* ---------- Tech Stack Section ---------- */
+.tech-stack {
+  background: var(--bg-secondary);
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tech-category {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border);
+  transition: all var(--transition-normal);
+}
+
+.tech-category:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.tech-category h3 {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.tech-item:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.tech-item img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ---------- Featured Projects Section ---------- */
 .featured-projects {
   background: var(--bg-primary);
@@ -648,7 +710,7 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -659,6 +721,9 @@ section {
   overflow: hidden;
   border: 1px solid var(--border);
   transition: all var(--transition-normal);
+  max-width: 450px;
+  justify-self: center;
+  width: 100%;
 }
 
 .project-card:hover {
@@ -752,68 +817,6 @@ section {
 
 .view-all-projects {
   text-align: center;
-}
-
-/* ---------- Tech Stack Section ---------- */
-.tech-stack {
-  background: var(--bg-secondary);
-}
-
-.tech-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.tech-category {
-  background: var(--bg-card);
-  padding: 2rem;
-  border-radius: var(--card-radius);
-  border: 1px solid var(--border);
-  transition: all var(--transition-normal);
-}
-
-.tech-category:hover {
-  box-shadow: var(--shadow-md);
-  border-color: var(--primary);
-}
-
-.tech-category h3 {
-  font-size: 1rem;
-  color: var(--primary);
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tech-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tech-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: var(--bg-secondary);
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  transition: all var(--transition-fast);
-}
-
-.tech-item:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-2px);
-}
-
-.tech-item img {
-  width: 20px;
-  height: 20px;
 }
 
 /* ---------- Contact CTA Section ---------- */
