@@ -47,7 +47,7 @@ const LanguageManager = {
   updatePageMeta(lang) {
     // Optional: Update document title based on current page
     const titles = {
-      'index.html': { id: 'Helmi Estiawan - Backend Developer & Programmer', en: 'Helmi Estiawan - Backend Developer & Programmer' },
+      'index.html': { id: 'Helmi Estiawan - Programmer', en: 'Helmi Estiawan - Programmer' },
       'about.html': { id: 'Tentang - Helmi Estiawan', en: 'About - Helmi Estiawan' },
       'cv.html': { id: 'CV - Helmi Estiawan', en: 'CV - Helmi Estiawan' },
       'contact.html': { id: 'Kontak - Helmi Estiawan', en: 'Contact - Helmi Estiawan' }
