@@ -460,6 +460,19 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.typing-cursor {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 400;
+  animation: blink 0.8s ease-in-out infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .hero-description {
   font-size: 1.125rem;
   max-width: 500px;

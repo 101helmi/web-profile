@@ -504,6 +504,11 @@ const TypingEffect = {
   }
 };
 
+// Enable typing effect for hero subtitle
+document.addEventListener('DOMContentLoaded', function() {
+  TypingEffect.init('.typing-text', ['Programmer', 'Web Developer','Fullstack Developer'], 100, 2000);
+});
+
 // Uncomment to enable typing effect
 // document.addEventListener('DOMContentLoaded', function() {
 //   TypingEffect.init('.hero-subtitle', ['Backend Developer', 'Python Enthusiast', 'Problem Solver']);
